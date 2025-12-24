@@ -6,4 +6,6 @@ source ./repositories/flathub.sh
 
 source ./desktop/gnome.sh
 
+source ./internet/firefox.sh
+
 source ./development/docker.sh
