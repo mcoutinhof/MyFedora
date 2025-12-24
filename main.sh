@@ -5,3 +5,5 @@ source ./repositories/rpmfusion.sh
 source ./repositories/flathub.sh
 
 source ./desktop/gnome.sh
+
+source ./development/docker.sh
