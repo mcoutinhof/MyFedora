@@ -11,3 +11,4 @@ source ./desktop/postinstall.sh
 source ./internet/firefox.sh
 
 source ./development/docker.sh
+source ./development/vscode.sh
