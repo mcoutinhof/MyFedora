@@ -9,6 +9,8 @@ fi
 source ./repositories/rpmfusion.sh
 source ./repositories/flathub.sh
 
+source ./lib/dependencies.sh
+
 source ./desktop/gnome.sh
 
 source ./desktop/postinstall.sh
@@ -17,3 +19,5 @@ source ./internet/firefox.sh
 
 source ./development/docker.sh
 source ./development/vscode.sh
+
+source ./games/steam.sh
