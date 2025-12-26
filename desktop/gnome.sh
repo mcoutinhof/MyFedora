@@ -2,23 +2,23 @@
 
 (
   declare -r PACKAGES=(
-    gnome-shell
+    gnome-shell             # Base desktop environment
 
-    gnome-terminal
-    nautilus
-    gnome-terminal-nautilus
-    file-roller
-    gnome-system-monitor
-    gnome-disk-utility
-    gnome-logs
-    baobab   # Disk usage analyzer
+    gnome-terminal          # Terminal emulator
+    nautilus                # File manager
+    gnome-terminal-nautilus # "Open in terminal" context menu in file manager
+    file-roller             # Archive manager
+    gnome-system-monitor    # System monitor
+    gnome-disk-utility      # Partition manager
+    gnome-logs              # Log viewer
+    baobab                  # Disk usage analyzer
 
-    gnome-calculator
-    gnome-text-editor
-    papers   # Document viewer
-    loupe    # Image viewer
-    decibels # Audio player
-    showtime # Video player
+    gnome-calculator        # Calculator
+    gnome-text-editor       # Text editor
+    papers                  # Document viewer
+    loupe                   # Image viewer
+    decibels                # Audio player
+    showtime                # Video player
 
     gnome-extensions-app
     gnome-shell-extension-appindicator
