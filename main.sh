@@ -7,7 +7,7 @@ if [[ $EUID -eq 0 ]]; then
 fi
 
 # Dependencies
-sudo dnf install -y newt pciutils
+sudo dnf install -y curl tar newt pciutils
 
 DESKTOP_ENVIRONMENT=$(whiptail --title "My Fedora" --notags \
   --menu "Select you preferred desktop environment:" 15 60 4 \
@@ -28,6 +28,7 @@ source ./desktop/postinstall.sh
 source ./internet/firefox.sh
 
 source ./development/docker.sh
+source ./development/jetbrains-toolbox.sh
 source ./development/vscode.sh
 
 source ./gaming/steam.sh
