@@ -13,6 +13,7 @@ DESKTOP_ENVIRONMENT=$(whiptail --title "My Fedora" --notags \
   --menu "Select your preferred desktop environment:" 15 60 4 \
   "gnome" "GNOME Desktop (recommended)" \
   "plasma" "KDE Plasma Desktop" \
+  "cinnamon" "Cinnamon Desktop" \
   3>&1 1>&2 2>&3)
 
 USAGE_TYPES=$(whiptail --title "My Fedora" --notags \
@@ -32,6 +33,7 @@ sudo dnf install -y curl tar pciutils
 case "$DESKTOP_ENVIRONMENT" in
 "gnome") source ./desktop/gnome.sh ;;
 "plasma") source ./desktop/plasma.sh ;;
+"cinnamon") source ./desktop/cinnamon.sh ;;
 esac
 
 source ./desktop/postinstall.sh
