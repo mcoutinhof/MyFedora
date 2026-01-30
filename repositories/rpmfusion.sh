@@ -6,4 +6,4 @@ sudo dnf install -y \
 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 sudo dnf install -y rpmfusion-\*-appstream-data
 
-sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+sudo dnf swap -y ffmpeg-free ffmpeg --allowerasing
