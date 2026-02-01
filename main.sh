@@ -6,6 +6,9 @@ if [[ $EUID -eq 0 ]]; then
   exit 1
 fi
 
+# Logging
+exec > >(tee -ai "MyFedora-$(date +%Y%m%d-%H%M%S).log") 2>&1
+
 # User Preferences
 sudo dnf install -y newt
 
