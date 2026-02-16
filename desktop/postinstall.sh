@@ -2,6 +2,7 @@
 
 # If it's a laptop, use TLP for power management; otherwise, use tuned for performance.
 if grep -q "Battery" /sys/class/power_supply/*/type; then
+  sudo dnf install -y "https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm"
   sudo dnf install -y tlp tlp-pd tlp-rdw
   sudo dnf remove -y power-profiles-daemon tuned tuned-ppd
   sudo systemctl enable --now tlp.service
