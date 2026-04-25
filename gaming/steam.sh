@@ -11,4 +11,4 @@ fi
 flatpak install -y flathub net.davidotek.pupgui2
 
 # SteamTinkerLaunch dependencies
-sudo dnf install -y awk git pgrep unzip wget xdotool xprop xrandr xxd xwininfo yad
+sudo dnf install -y gawk git pgrep unzip wget xdotool xprop xrandr xxd xwininfo yad
