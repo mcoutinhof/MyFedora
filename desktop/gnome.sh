@@ -2,23 +2,23 @@
 
 (
   declare -r PACKAGES=(
-    gnome-shell             # Base desktop environment
+    gnome-shell          # Base desktop environment
+    gdm                  # Login manager
 
-    gnome-terminal          # Terminal emulator
-    nautilus                # File manager
-    gnome-terminal-nautilus # "Open in terminal" context menu in file manager
-    file-roller             # Archive manager
-    gnome-system-monitor    # System monitor
-    gnome-disk-utility      # Partition manager
-    gnome-logs              # Log viewer
-    baobab                  # Disk usage analyzer
+    ptyxis               # Terminal emulator
+    nautilus             # File manager
+    file-roller          # Archive manager
+    gnome-system-monitor # System monitor
+    gnome-disk-utility   # Partition manager
+    gnome-logs           # Log viewer
+    baobab               # Disk usage analyzer
 
-    gnome-calculator        # Calculator
-    gnome-text-editor       # Text editor
-    papers                  # Document viewer
-    loupe                   # Image viewer
-    decibels                # Audio player
-    showtime                # Video player
+    gnome-calculator     # Calculator
+    gnome-text-editor    # Text editor
+    papers               # Document viewer
+    loupe                # Image viewer
+    decibels             # Audio player
+    showtime             # Video player
 
     gnome-extensions-app
     gnome-shell-extension-appindicator
@@ -72,7 +72,7 @@ custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybin
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/open-terminal]
 name='Open terminal'
-command='gnome-terminal'
+command='ptyxis'
 binding='<Control><Alt>t'
 
 [org/gnome/desktop/privacy]
@@ -82,7 +82,7 @@ recent-files-max-age=30
 
 [org/gnome/shell]
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'caffeine@patapon.info', 'clipboard-history@alexsaveau.dev', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Settings.desktop']
+favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Settings.desktop']
 
 [org/gnome/shell/extensions/caffeine]
 restore-state=true

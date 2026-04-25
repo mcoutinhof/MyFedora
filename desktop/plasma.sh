@@ -3,18 +3,18 @@
 (
   declare -r PACKAGES=(
     plasma-desktop       # Base desktop environment
-    sddm sddm-breeze     # Login manager
+    plasma-login-manager # Login manager
 
     konsole              # Terminal emulator
     dolphin              # File manager
     ark                  # Archive manager
     plasma-systemmonitor # System monitor
     kde-partitionmanager # Partition manager
-    ksystemlog           # Log viewer
+    kjournald            # Log viewer
     filelight            # Disk usage analyzer
 
     kcalc                # Calculator
-    kate                 # Text editor
+    kwrite               # Text editor
     okular               # Document viewer
     gwenview             # Image viewer
     elisa-player         # Audio player
