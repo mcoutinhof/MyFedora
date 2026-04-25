@@ -33,6 +33,14 @@
 
   sudo dnf install -y "${PACKAGES[@]}" --exclude=gnome-tour
 
+  # Clipboard History extension
+  (
+    cd ~/.local/share/gnome-shell/extensions/ && \
+      git clone https://github.com/SUPERCILEX/gnome-clipboard-history.git clipboard-history@alexsaveau.dev && \
+      cd clipboard-history@alexsaveau.dev && \
+      make
+  )
+
   declare -rA DCONF_SETTINGS=(
     # Power
     ["/org/gnome/settings-daemon/plugins/power/power-button-action"]="'interactive'"
@@ -63,7 +71,7 @@
     ["/org/gnome/desktop/privacy/recent-files-max-age"]="30"
 
     # Extensions
-    ["/org/gnome/shell/enabled-extensions"]="['appindicatorsupport@rgcjonas.gmail.com', 'caffeine@patapon.info', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']"
+    ["/org/gnome/shell/enabled-extensions"]="['appindicatorsupport@rgcjonas.gmail.com', 'caffeine@patapon.info', 'clipboard-history@alexsaveau.dev', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']"
     # Caffeine
     ["/org/gnome/shell/extensions/caffeine/restore-state"]="true"
     # Dash to Dock
