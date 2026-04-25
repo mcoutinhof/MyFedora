@@ -34,12 +34,9 @@
   sudo dnf install -y "${PACKAGES[@]}" --exclude=gnome-tour
 
   # Clipboard History extension
-  (
-    cd ~/.local/share/gnome-shell/extensions/ && \
-      git clone https://github.com/SUPERCILEX/gnome-clipboard-history.git clipboard-history@alexsaveau.dev && \
-      cd clipboard-history@alexsaveau.dev && \
-      make
-  )
+  EXT_DIR="$HOME/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev"
+  [ -d "$EXT_DIR" ] || git clone https://github.com/SUPERCILEX/gnome-clipboard-history.git "$EXT_DIR"
+  make -C "$EXT_DIR"
 
   declare -rA DCONF_SETTINGS=(
     # Power
