@@ -30,7 +30,7 @@ source ./repositories/rpmfusion.sh
 source ./repositories/flathub.sh
 
 # Dependencies
-sudo dnf install -y git curl tar pciutils
+sudo dnf install -y curl git make pciutils tar
 
 # Desktop Environment
 case "$DESKTOP_ENVIRONMENT" in
