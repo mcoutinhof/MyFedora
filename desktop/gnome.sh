@@ -81,6 +81,7 @@ old-files-age=uint32 7
 recent-files-max-age=30
 
 [org/gnome/shell]
+disable-extension-version-validation=true
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'caffeine@patapon.info', 'clipboard-history@alexsaveau.dev', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Settings.desktop']
 
